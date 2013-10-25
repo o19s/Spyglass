@@ -16,8 +16,7 @@ module.exports = function(grunt) {
         '../src/Components/result_set.js', 
         '../src/Components/input.js', 
         '../src/Components/pagination.js', 
-        '../src/Components/facets.js',
-        '../src/init.js'],
+        '../src/Components/facets.js'],
         dest: '../spyglass-dev.js'
       }
     },
