@@ -1,0 +1,7 @@
+js/grunt/node_modules/
+*.*~
+.idea/
+
+js/spyglass.js
+js/spyglass-dev.js
+js/SpyGlass.*.js
