@@ -1,4 +1,6 @@
 js/grunt/node_modules/
+.sass-cache
+.DS_Store
 *.*~
 .idea/
 
