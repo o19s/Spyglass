@@ -3,6 +3,16 @@
 
 Spyglass provides a simple search interface for Solr using EmberJS.
 
+Spyglass comes with many of the search components you need to create a lightweight search interface right out of the box.
+
+- Searchers that return a result from a given Solr url,
+- a Search Box which is a simple input tied to its searcher,
+- Result Sets that automatically show the results returned by their searchers, and
+- Facets which toggle search parameters. Both result sets and facets are extensions of 
+‘SearcherObservers’ which update automatically when their linked ‘searcher’ has new objects.
+
+For a little more background until we get a project page up [go here](http://www.opensourceconnections.com/2013/08/28/investing-in-client-side-search/).
+
 ## Trying Spyglass
 1. Download the Spyglass binary from the releases tab.
 3. Edit the example `js/app.js` and `index.html` files to point to your Solr instance.
