@@ -1,12 +1,11 @@
 
 # Spyglass
-## Simple Solr Search with EmberJS
 
-Spyglass provides a simple search interface for Solr.
+Spyglass provides a simple search interface for Solr using EmberJS.
 
 ## Trying Spyglass
 1. Download the Spyglass binary.
-3. Edit the example `app.js` and `index.html` files to point to your Solr instance.
+3. Edit the example `/js/app.js` and `/index.html` files to point to your Solr instance.
 4. Open the page in your browser.
 
 ## Building Spyglass from Source
