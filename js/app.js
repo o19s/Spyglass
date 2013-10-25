@@ -91,11 +91,11 @@ App.SearchRoute = Ember.Route.extend({
     }
 
     App.searcher.search();
-    $(document).attr('title', 'SpyGlass: ' + queryObj.q);
+    $(document).attr('title', 'Spyglass: ' + queryObj.q);
   },
   activate: function() {
     console.log("search activated");
-    $(document).attr('title', 'SpyGlass: ' + App.searcher.searchedFor);
+    $(document).attr('title', 'Spyglass: ' + App.searcher.searchedFor);
   }
 });
 
