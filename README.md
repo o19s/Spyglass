@@ -16,7 +16,7 @@ For a little more background until we get a project page up [go here](http://www
 ## Trying Spyglass
 1. Download the Spyglass binary from the releases tab.
 3. Edit the example `js/app.js` and `index.html` files to point to your Solr instance.
-4. Open the page in your browser.
+4. Open the page in your browser, or deploy it to your own site.
 
 ## Building Spyglass from Source
 1. Install NPM if you don't have it https://npmjs.org/
