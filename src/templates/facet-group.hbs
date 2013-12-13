@@ -1,0 +1,8 @@
+{{#if view.facets}}
+  <h3>{{{view.displayName}}}</h3>
+  <ul class="facets-list">
+    {{#each view.facets }}
+      {{view this}}
+    {{/each}}
+  </ul>
+{{/if}}

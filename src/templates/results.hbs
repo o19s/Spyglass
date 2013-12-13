@@ -1,0 +1,46 @@
+{{#with view}}
+  {{#if searcher.isSearching}}
+    <h3 class="sr-header">Searching for '<strong>{{searcher.searchedFor}}</strong>' &hellip;</h3>
+  {{else}}
+    {{#if searcher.searchedFor}}
+      <div class="sr-header">
+        <h3>{{searcher.numFound}} Results for '<strong>{{searcher.searchedFor}}</strong>'</h3>
+        {{#if SgApp.searcher.selectedFacets}}
+          <div class="selected-facets">
+            Selected Facets:
+            {{#each facet in SgApp.searcher.selectedFacets}}
+              <a href="" class="facet" {{action 'removeSelectedFacet' facet target='SgApp.searcher'}}>{{facet.field}}:{{facet.value}}</a>
+            {{/each}}
+          </div>
+        {{/if}}
+      </div>
+    {{/if}}
+  {{/if}}
+
+  <ul class="sr-list">
+    {{#each results}}
+      <li class="sr-item">
+
+        {{!-- 
+          Replace the default fields (title, link, and description) with the correct Solr fields. Then load this page in the browser to see it in action.
+        --}}
+
+        <h4><a href="{{unbound link}}">{{ title }}</a></h4>
+
+        <div>
+          {{{ description }}}
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+
+  {{#if searcher.isSearching}}
+    <p class="results-message results-loading">Loading Results &hellip;</p><br>
+  {{/if}}
+  {{#if searcher.noResults}}
+    <p class="results-message results-none">No results were found for your search. Try broadening your terms.</p><br>
+  {{/if}}
+  {{#if searcher.allResultsLoaded}}
+    <p class="results-message results-loaded">All Results Loaded</p><br>
+  {{/if}}
+{{/with}}

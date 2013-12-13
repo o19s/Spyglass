@@ -1,0 +1,56 @@
+
+// Spyglass Facets Module
+
+.sf-module
+  width: 20%
+  padding: 0 2.5%
+  float: right
+  .facets-list
+    // font-size: 120%
+    list-style: none inside
+    line-height: 1.4em
+    padding: .5em
+    margin: 0 0 2em
+    background: #fbfbfb
+  li
+    padding: 0 .5em
+    overflow: auto
+    &:hover
+      cursor: pointer
+      background: #fdfdfd
+  a
+    text-decoration: none
+    color: #444
+    margin-right: 2em
+  span
+    display: inline-block
+    float: right
+    font-size: 80%
+    line-height: 1.8em
+    color: #999
+
+
+// Selected Facets
+
+.selected-facets
+  color: #666
+  .facet
+    border-radius: 4px
+    position: relative
+    margin: 0 .5em
+    padding: 3px 1em
+    border: 1px solid #ddd
+    text-decoration: none
+    color: #666
+    &:hover
+      background: #ddd
+      &:after
+        content: 'x'
+        position: absolute
+        z-index: 2
+        right: -.75em
+        top: 2px
+        padding: 0 .4em
+        background: #555
+        color: #ddd
+        border-radius: 4px

@@ -1,0 +1,1 @@
+SgApp.Router.map(function () {});
