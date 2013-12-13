@@ -9,4 +9,4 @@ dist
 test
 .sass-cache
 .tmp
-app/bower_components
+bower_components
