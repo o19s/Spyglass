@@ -18,7 +18,7 @@ For a little more background until we get a project page up [go here](http://www
 3. Open the page in your browser, or deploy it to your own site.
 
 ## Building Spyglass from Source
-1. Install NodeJS if you don't have it from nodejs.org/download/
+1. Install NodeJS if you don't have it from [nodejs.org/download/](http://nodejs.org/download/)
 2. Then install Yeoman: `npm install -g yo`
 3. Next run `npm install` from the project directory to get any dependencies.
 4. Finally, use `grunt server` to view your Spyglass site as you make changes. To build a production version of your app just run `grunt build`.
