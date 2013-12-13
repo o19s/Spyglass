@@ -14,11 +14,11 @@ For a little more background until we get a project page up [go here](http://www
 
 ## Trying Spyglass
 1. Download the Spyglass binary **from the releases tab**.
-3. Edit the example `js/app.js` and `index.html` files to point to your Solr instance.
-4. Open the page in your browser, or deploy it to your own site.
+2. Edit the example `js/app.js` and `index.html` files to point to your Solr instance.
+3. Open the page in your browser, or deploy it to your own site.
 
 ## Building Spyglass from Source
-1. Install NPM if you don't have it https://npmjs.org/
-2. Install the Grunt package manager http://gruntjs.com/getting-started
-3. Navigate to the `grunt` folder within the Spyglass project and run `npm install` to get any dependencies.
-4. Use `grunt watch` to compile the Spyglass javascript as you make changes.
+1. Install NodeJS if you don't have it from nodejs.org/download/
+2. Then install Yeoman: `npm install -g yo`
+3. Next run `npm install` from the project directory to get any dependencies.
+4. Finally, use `grunt server` to view your Spyglass site as you make changes. To build a production version of your app just run `grunt build`.
