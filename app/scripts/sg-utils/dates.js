@@ -30,10 +30,10 @@ $(document).ready(function() {
   $(window).scroll(function(){
     var distanceToBottom = $(document).height() - $(window).scrollTop(),
         windowHeight = $(window).height(),
-        allResultsLoaded = App.searcher.get('allResultsLoaded');
+        allResultsLoaded = SgApp.searcher.get('allResultsLoaded');
 
-    if (!allResultsLoaded && !App.searcher.isSearching && window.location.hash.indexOf("search") > -1 && distanceToBottom < windowHeight + 360 ) {
-      App.searcher.loadNextResults();
+    if (!allResultsLoaded && !SgApp.searcher.isSearching && window.location.hash.indexOf("search") > -1 && distanceToBottom < windowHeight + 360 ) {
+      SgApp.searcher.loadNextResults();
     }
   });
 });

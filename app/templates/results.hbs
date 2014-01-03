@@ -24,12 +24,8 @@
         {{!-- 
           Replace the default fields (title, link, and description) with the correct Solr fields. Then load this page in the browser to see it in action.
         --}}
-
-        <h4><a href="{{unbound link}}">{{ title }}</a></h4>
-
-        <div>
-          {{{ description }}}
-        </div>
+        <h4><a href="{{unbound link}}">{{unescapeString title}}</a></h4>
+        <p>{{{description}}}</p>
       </li>
     {{/each}}
   </ul>

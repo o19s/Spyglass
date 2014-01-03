@@ -1,0 +1,31 @@
+.sr-input
+  margin: 1em 0 2em
+
+.sg-input, 
+.sg-submit
+  +border-radius(3px)
+  margin: 3em 0 1em
+  padding: .75em 1%
+  font-size: 120%
+  &, &:focus
+    -moz-appearance: none
+    -webkit-appearance: none
+    outline: none
+
+.sg-input
+  width: 67.8%
+  border: 1px solid lighten($color-primary, 40)
+  color: #333
+  &:focus
+    background: change-color($color-primary, $lightness: 97%)
+
+.sg-submit
+  padding: .75em 2em
+  margin-left: 1em
+  border: 1px solid lighten($color-primary, 0)
+  background: lighten($color-primary, 20)
+  color: #fff
+  &:active
+    background: lighten($color-primary, 17)
+  &:hover
+    background: lighten($color-primary, 15)

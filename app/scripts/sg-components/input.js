@@ -7,7 +7,7 @@ Sg.SearchBox = Ember.TextField.extend({
   placeholder: "Search Keywords",
   name: 'searchInput',
   expanded: false,
-  classNames: null,
+  classNames: ['sg-input'],
   didInsertElement: function () {
     if (this.searcher.searchedFor) {
       this.set('value', this.searcher.searchedFor);
@@ -48,13 +48,12 @@ Sg.SearchBox = Ember.TextField.extend({
   }
 });
 
-Sg.SearchSubmit = Ember.View.extend({
-  tagName: 'input',
+Sg.SearchSubmit = Ember.TextField.extend({
+  classNames: ['sg-submit'],
   type: 'submit',
+  value: 'Search',
   click: function() {
-    self.params.start = 0;
-    self.clearFacets();
-    this.searcher.setQuery(this.value);
-    this.searcher.search();
+    this.searcher.clearFacets();
+    this.searcher.submitSearch();
   }
 });

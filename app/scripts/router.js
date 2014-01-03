@@ -1,1 +1,3 @@
-SgApp.Router.map(function () {});
+SgApp.Router.map(function() {
+  this.resource('search', {path: '/search/:query'})
+});

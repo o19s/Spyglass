@@ -40,7 +40,7 @@ Sg.Utils.returnSearchHash = function(q, facets, sort) {
 };
 
 Sg.Utils.parseFqString = function(fqString) {
-  console.log('fqString', fqString);
+  // console.log('fqString', fqString);
 
   var fqArray = decodeURIComponent(fqString.toString()).replace(/\::/g, '/').split(','),
       obj = {},
@@ -72,6 +72,6 @@ Sg.Utils.parseFqString = function(fqString) {
     }
   }
 
-  console.log("fqString obj", obj);
+  // console.log("fqString obj", obj);
   return obj;
 };

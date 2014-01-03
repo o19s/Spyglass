@@ -2,32 +2,58 @@
 // Spyglass Facets Module
 
 .sf-module
-  width: 20%
-  padding: 0 2.5%
+  width: 25%
+  padding: 0 0 0 2.5%
   float: right
+  .sg-facet-group
+    border: 1px solid lighten($color-muted, 20%)
+    border-width: 0 1px 1px
+    overflow: auto
+  .facet-group-heading
+    padding: .5em 1em
+    background: lighten($color-muted, 20%)
+    border-bottom: 1px solid lighten($color-muted, 12%)
+    font-weight: 300
+    color: darken($color-muted, 25%)
+    margin: 0
+    cursor: pointer
+    &:hover
+      background: lighten($color-muted, 17%)
   .facets-list
     // font-size: 120%
     list-style: none inside
     line-height: 1.4em
+    padding: 1em .5em 1em
+    margin: 0
+  .toggle-facet-limit
+    display: block
+    padding: 0 .5em 1em
+    float: right
+  .facet
     padding: .5em
-    margin: 0 0 2em
-    background: #fbfbfb
-  li
-    padding: 0 .5em
     overflow: auto
+    border-bottom: 1px dotted lighten($color-muted, 20%)
+    position: relative
     &:hover
       cursor: pointer
-      background: #fdfdfd
-  a
+      background: change-color($color-primary, $lightness: 98.5%)
+  .facet-name
     text-decoration: none
-    color: #444
+    font-weight: bold
+    color: $color-primary
     margin-right: 2em
-  span
-    display: inline-block
-    float: right
+  .facet-count
+    display: block
+    position: absolute
+    top: .5em
+    right: .5em
     font-size: 80%
     line-height: 1.8em
     color: #999
+    +border-radius(3px)
+    padding: 0 .5em
+    background: change-color($color-primary, $lightness: 94%)
+    color: $color-primary
 
 
 // Selected Facets
@@ -35,7 +61,7 @@
 .selected-facets
   color: #666
   .facet
-    border-radius: 4px
+    +border-radius(4px)
     position: relative
     margin: 0 .5em
     padding: 3px 1em
@@ -53,4 +79,4 @@
         padding: 0 .4em
         background: #555
         color: #ddd
-        border-radius: 4px
+        +border-radius(4px)

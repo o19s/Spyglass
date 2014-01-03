@@ -1,8 +1,13 @@
 {{#if view.facets}}
-  <h3>{{{view.displayName}}}</h3>
+<div class="sg-facet-group">
+  <h3 {{action showList target="view"}} class="facet-group-heading">{{view.displayName}}</h3>
   <ul class="facets-list">
     {{#each view.facets }}
       {{view this}}
     {{/each}}
   </ul>
+  {{#if view.expandable}}
+    <a {{action toggleFacetLimit target="view"}} href="#" class="toggle-facet-limit"> {{view.expandText}} </a>
+  {{/if}}
+</div>
 {{/if}}

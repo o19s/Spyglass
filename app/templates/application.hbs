@@ -1,9 +1,13 @@
 <div class="search-application">
   <header class="search-header">
-    <h1>Spyglass</h1>
-    <p>Simple search results with EmberJS</p>
+    <h1 class="site-heading">Your Search</h1>
+    <h1 class="spyglass-heading">Spyglass</h1>
   </header>
-
+  
+  <div class="sr-input">
+    {{view SgApp.searchInput}}
+    {{view SgApp.searchSubmit}}
+  </div>
   {{outlet}}
 
 </div>

@@ -53,13 +53,17 @@ Sg.Searcher = Em.ObjectController.extend({
   search: function() {
     var self = this;
     
-    self.set("isSearching", true);
-    self.set('searchedFor', self.params.q);
-    self.set("responseTime", new Date().getTime());
+    self.setProperties({
+      isSearching: true,
+      searchedFor: self.params.q,
+      responseTime: new Date().getTime()
+    });
+
+    console.log("params?", self.params, self.url);
 
     $.ajax({
-      url: this.url,
-      data: this.params,
+      url: self.url,
+      data: self.params,
       traditional: true,
       cache: true,
       success: function(data) {
@@ -71,7 +75,6 @@ Sg.Searcher = Em.ObjectController.extend({
 
         // self.set('searchedFor', self.params.q);
         self.set('responseTime', now - self.responseTime);
-        // console.log(data);
       },
       statusCode: {
         400: function() {
@@ -82,7 +85,7 @@ Sg.Searcher = Em.ObjectController.extend({
       dataType: 'jsonp',
       jsonp: 'json.wrf',
       beforeSend: function(j, s) {
-      console.log('beforeSend', s.url.replace(/\=/g, ": ").split('&'));
+        // console.log('beforeSend', s.url.replace(/\=/g, ": ").split('&'));
       }
     });
   },

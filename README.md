@@ -18,7 +18,12 @@ For a little more background until we get a project page up [go here](http://www
 4. Open the page in your browser, or deploy it to your own site.
 
 ## Building Spyglass from Source
-1. Install NPM if you don't have it https://npmjs.org/
-2. Install the Grunt package manager http://gruntjs.com/getting-started
-3. Navigate to the `grunt` folder within the Spyglass project and run `npm install` to get any dependencies.
-4. Use `grunt watch` to compile the Spyglass javascript as you make changes.
+
+To build Spyglass from source you will need:
+1. [NPM](https://npmjs.org/) installed
+2. [Bower](http://bower.io/): `npm install -g bower`
+3. [Grunt](http://gruntjs.com/): `npm install -g grunt-cli`
+
+Then: 
+1. Navigate to the `grunt` folder within the Spyglass project and run `bower install` then `npm install` to get any project dependencies.
+2. Use `grunt watch` to automatically compile the Spyglass javascript and css as you make changes.
