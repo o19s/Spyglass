@@ -23,7 +23,7 @@ require('scripts/router');
 SgApp.searcher = Sg.SolrSearcher.create({
 
   // Point this value to your Solr instance
-  url: "http://your-solr-url.com/solr/collection/select",
+  url: "http://localhost:8983/solr/collection1/select",
   
   params: {
 

@@ -21,7 +21,7 @@ module.exports = function (grunt) {
 
     // configurable paths
     var yeomanConfig = {
-        app: 'src',
+        app: 'app',
         dist: 'dist'
     };
 
@@ -285,7 +285,7 @@ module.exports = function (grunt) {
             framework: {
                 options: {
                     filepathTransform: function (filepath) {
-                        return 'src/' + filepath;
+                        return 'app/' + filepath;
                     }
                 },
                 src: '<%= yeoman.app %>/scripts/spyglass.js',
@@ -294,7 +294,7 @@ module.exports = function (grunt) {
             app: {
                 options: {
                     filepathTransform: function (filepath) {
-                        return 'src/' + filepath;
+                        return 'app/' + filepath;
                     }
                 },
                 src: '<%= yeoman.app %>/scripts/spyglass-app.js',

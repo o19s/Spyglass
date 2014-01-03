@@ -1,12 +1,11 @@
-.sass-cache
 .DS_Store
 *.*~
 .idea/
 
 node_modules
+bower_components
+.sass-cache
 temp
+.tmp
 dist
 test
-.sass-cache
-.tmp
-bower_components
