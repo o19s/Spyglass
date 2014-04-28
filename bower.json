@@ -1,11 +1,11 @@
 {
-  "name": "spyglass-yo",
-  "version": "0.0.0",
+  "name": "spyglass",
+  "version": "0.0.1",
   "dependencies": {
-    "ember": "1.0.0",
-    "ember-data-shim": "1.0.0-beta.2"
+    "ember": "1.6.0-beta.2",
+    "ember-data-shim": "1.0.0-beta.7"
   },
   "devDependencies": {
-    "ember-mocha-adapter": "0.1.2"
+    "ember-mocha-adapter": "0.2.0"
   }
 }
