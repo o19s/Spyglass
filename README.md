@@ -1,4 +1,5 @@
-# Spyglass
+
+![Spyglass](branding/spyglass.png)
 
 Spyglass provides a simple search interface for Solr using EmberJS.
 
