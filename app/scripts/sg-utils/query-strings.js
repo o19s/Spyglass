@@ -54,7 +54,7 @@ Sg.Utils.parseFqString = function(fqString) {
         value = s[1] ? s[1] : false;
     
     if (!value) {
-      return;
+      return key.toString();
     }
 
     if (obj[key]) {
