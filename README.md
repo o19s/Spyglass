@@ -3,6 +3,9 @@
 
 Spyglass provides a simple search interface for Solr using EmberJS.
 
+
+_Update: March 2019 - We are no longer maintaining this Gem.  Please contact epugh@opensourceconnections.com if you would like to take over this project._
+
 Spyglass comes with many of the search components you need to create a lightweight search interface right out of the box.
 
 - Searchers that return a result from a given Solr url,
